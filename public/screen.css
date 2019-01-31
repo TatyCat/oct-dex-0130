@@ -59,13 +59,15 @@ footer {
   padding: .4rem 0;
   background-color: #F3F3F3;;
   border-top: rgb(196, 196, 196) 1px solid;
-  margin-bottom: 0px;
-  bottom: 0px;
-  /* 
-  height: 10vh;
+
+  /* margin-bottom: 0px;
+  bottom: 0px; */
+  
+  /* height: 10vh;
   width: 100%;
   right: 0;
   left: 0; */
+  align-items: flex-end;
 }
 
 footer ul{
@@ -86,6 +88,10 @@ footer ul li a{
   justify-content: space-between;
 }
 
+footer ul li a:visited{
+   color: #5182BE;
+}
+
 footer ul li a img{
   height: 3vh;
 }
@@ -101,27 +107,33 @@ main {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 figure{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin:2rem 1rem;
 }
 
 figure img{
-  width: 40vh;
+  width: 48vh;
+  border: 1px solid #CACACA;
+  padding: 1rem;
 }
+
 figure figcaption img{
   width: 4vh;
   border-radius: 5px;
+  font-size: 3rem;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 figcaption{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   white-space: nowrap;
 }
 
