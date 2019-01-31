@@ -12,6 +12,10 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 /* ------Header */
 header {
   background-color: #F3F3F3;
@@ -55,6 +59,13 @@ footer {
   padding: .4rem 0;
   background-color: #F3F3F3;;
   border-top: rgb(196, 196, 196) 1px solid;
+  margin-bottom: 0px;
+  bottom: 0px;
+  /* 
+  height: 10vh;
+  width: 100%;
+  right: 0;
+  left: 0; */
 }
 
 footer ul{
@@ -85,11 +96,36 @@ footer ul li p{
 }
 
 
-/* ------ */
-main p {
-  margin: 30rem 2rem;
+/* ------Main Section */
+main {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-between;
+}
+figure{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
-ul li {
-  list-style-type: none;
+figure img{
+  width: 40vh;
 }
+figure figcaption img{
+  width: 4vh;
+  border-radius: 5px;
+}
+
+figcaption{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+
+figcaption a span{
+  padding-left: .5rem;
+}
+
