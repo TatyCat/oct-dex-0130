@@ -9,4 +9,87 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* ------Header */
+header {
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .4rem;
+}
+
+header ul{
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: 1rem;
+}
+
+header ul li a{
+  color: black;
+  font-weight: bold;
+  padding-left: 1rem;
+  font-size: 1.5vh;
+  padding-right: .5rem;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+header ul li a:hover{
+  color: #5182BE;
+}
+
+header a img {
+  width: 20vh;
+  padding-left: 1.5vh;
+}
+
+
+/* ------Footer */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .4rem 0;
+  background-color: #F3F3F3;;
+  border-top: rgb(196, 196, 196) 1px solid;
+}
+
+footer ul{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+footer ul li a{
+  color: #5182BE;
+  padding-left: 1rem;
+  font-size: 1.5vh;
+  padding-right: .5rem;
+  white-space: nowrap;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li a img{
+  height: 3vh;
+}
+
+footer ul li p{
+  color: rgb(162, 162, 162);
+  font-size: 1.5vh;
+}
+
+
+/* ------ */
+main p {
+  margin: 30rem 2rem;
+}
+
+ul li {
+  list-style-type: none;
 }
